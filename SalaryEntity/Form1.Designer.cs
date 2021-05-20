@@ -310,7 +310,8 @@ namespace SalaryEntity
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(344, 29);
             this.textBox3.TabIndex = 4;
-            this.textBox3.Text = "Заплата";
+            this.textBox3.Enter += new System.EventHandler(this.textBox3_Enter);
+            this.textBox3.Leave += new System.EventHandler(this.textBox3_Leave);
             // 
             // textBox2
             // 
@@ -319,8 +320,10 @@ namespace SalaryEntity
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(344, 29);
             this.textBox2.TabIndex = 2;
-            this.textBox2.Text = "Должность";
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged_1);
+            this.textBox2.Enter += new System.EventHandler(this.textBox2_Enter);
+            this.textBox2.Leave += new System.EventHandler(this.textBox2_Leave);
+            this.textBox2.Validated += new System.EventHandler(this.textBox2_Validated);
             // 
             // textBox1
             // 
@@ -330,8 +333,9 @@ namespace SalaryEntity
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(344, 29);
             this.textBox1.TabIndex = 0;
-            this.textBox1.Text = "Имя Фамилия";
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.textBox1.Enter += new System.EventHandler(this.textBox1_Enter);
+            this.textBox1.Leave += new System.EventHandler(this.textBox1_Leave);
             // 
             // workersTableAdapter
             // 

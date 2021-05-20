@@ -26,6 +26,15 @@ namespace SalaryEntity
             dayField.Text = "Количество дней";
             dayField.ForeColor = Color.Black;
 
+            textBox1.Text = "Имя Фамилия";
+            textBox1.ForeColor = Color.Black;
+
+            textBox2.Text = "Должность";
+            textBox2.ForeColor = Color.Black;
+
+            textBox3.Text = "Зарплата";
+            textBox3.ForeColor = Color.Black;
+
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -141,9 +150,9 @@ namespace SalaryEntity
                 double percent = (int)(reader.GetValue(3)) / 100 * 13;
                 //var sum = reader.GetValue(3);
                 //sum = (int)sum / 21 * int.Parse(dayField.Text);
-                double salary = ((int)(reader.GetValue(3)) - (percent)) / 21 * double.Parse(dayField.Text);
+                double salary = ((int)(reader.GetValue(3)) - (percent)) / 21 * int.Parse(dayField.Text);
 
-                MessageBox.Show($"Ваша должность {reader.GetValue(2)},Ваша зарплата { salary.ToString()}");
+                MessageBox.Show($"Ваша должность {reader.GetValue(2)},Ваша зарплата { (int)salary}");
         }
             reader.Close();
 
@@ -152,6 +161,53 @@ namespace SalaryEntity
         private void nameField_TextChanged_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void textBox1_Enter(object sender, EventArgs e)
+        {
+            if (textBox1.Text == "Имя Фамилия")
+                textBox1.Text = "";
+            textBox1.ForeColor = Color.Black;
+        }
+
+        private void textBox1_Leave(object sender, EventArgs e)
+        {
+            if (textBox1.Text == "")
+                textBox1.Text = "Имя Фамилия";
+            textBox1.ForeColor = Color.Black;
+        }
+
+        private void textBox2_Enter(object sender, EventArgs e)
+        {
+            if (textBox2.Text == "Должность")
+                textBox2.Text = "";
+            textBox2.ForeColor = Color.Black;
+        }
+
+        private void textBox2_Validated(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void textBox2_Leave(object sender, EventArgs e)
+        {
+            if (textBox2.Text == "")
+                textBox2.Text = "Должность";
+            textBox2.ForeColor = Color.Black;
+        }
+
+        private void textBox3_Enter(object sender, EventArgs e)
+        {
+            if (textBox3.Text == "Зарплата")
+                textBox3.Text = "";
+            textBox3.ForeColor = Color.Black;
+        }
+
+        private void textBox3_Leave(object sender, EventArgs e)
+        {
+            if (textBox3.Text == "")
+                textBox3.Text = "Зарплата";
+            textBox3.ForeColor = Color.Black;
         }
 
         /*показ базы данных по кнопке
