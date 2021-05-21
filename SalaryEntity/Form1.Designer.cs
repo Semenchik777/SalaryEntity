@@ -45,17 +45,17 @@ namespace SalaryEntity
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.button1 = new System.Windows.Forms.Button();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.professionNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.salaryBlackDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.workersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dBDataSet = new SalaryEntity.DBDataSet();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.workersTableAdapter = new SalaryEntity.DBDataSetTableAdapters.WorkersTableAdapter();
             this.tabControl1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -65,9 +65,9 @@ namespace SalaryEntity
             this.tabPage3.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.workersBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dBDataSet)).BeginInit();
-            this.tabPage1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -241,41 +241,6 @@ namespace SalaryEntity
             this.dataGridView1.Size = new System.Drawing.Size(732, 339);
             this.dataGridView1.TabIndex = 1;
             // 
-            // idDataGridViewTextBoxColumn
-            // 
-            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
-            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
-            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-            this.idDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // nameDataGridViewTextBoxColumn
-            // 
-            this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
-            this.nameDataGridViewTextBoxColumn.HeaderText = "Name";
-            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
-            // 
-            // professionNameDataGridViewTextBoxColumn
-            // 
-            this.professionNameDataGridViewTextBoxColumn.DataPropertyName = "ProfessionName";
-            this.professionNameDataGridViewTextBoxColumn.HeaderText = "ProfessionName";
-            this.professionNameDataGridViewTextBoxColumn.Name = "professionNameDataGridViewTextBoxColumn";
-            // 
-            // salaryBlackDataGridViewTextBoxColumn
-            // 
-            this.salaryBlackDataGridViewTextBoxColumn.DataPropertyName = "SalaryBlack";
-            this.salaryBlackDataGridViewTextBoxColumn.HeaderText = "SalaryBlack";
-            this.salaryBlackDataGridViewTextBoxColumn.Name = "salaryBlackDataGridViewTextBoxColumn";
-            // 
-            // workersBindingSource
-            // 
-            this.workersBindingSource.DataMember = "Workers";
-            this.workersBindingSource.DataSource = this.dBDataSet;
-            // 
-            // dBDataSet
-            // 
-            this.dBDataSet.DataSetName = "DBDataSet";
-            this.dBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.Silver;
@@ -337,6 +302,41 @@ namespace SalaryEntity
             this.textBox1.Enter += new System.EventHandler(this.textBox1_Enter);
             this.textBox1.Leave += new System.EventHandler(this.textBox1_Leave);
             // 
+            // idDataGridViewTextBoxColumn
+            // 
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            this.idDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // nameDataGridViewTextBoxColumn
+            // 
+            this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
+            this.nameDataGridViewTextBoxColumn.HeaderText = "Name";
+            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
+            // 
+            // professionNameDataGridViewTextBoxColumn
+            // 
+            this.professionNameDataGridViewTextBoxColumn.DataPropertyName = "ProfessionName";
+            this.professionNameDataGridViewTextBoxColumn.HeaderText = "ProfessionName";
+            this.professionNameDataGridViewTextBoxColumn.Name = "professionNameDataGridViewTextBoxColumn";
+            // 
+            // salaryBlackDataGridViewTextBoxColumn
+            // 
+            this.salaryBlackDataGridViewTextBoxColumn.DataPropertyName = "SalaryBlack";
+            this.salaryBlackDataGridViewTextBoxColumn.HeaderText = "SalaryBlack";
+            this.salaryBlackDataGridViewTextBoxColumn.Name = "salaryBlackDataGridViewTextBoxColumn";
+            // 
+            // workersBindingSource
+            // 
+            this.workersBindingSource.DataMember = "Workers";
+            this.workersBindingSource.DataSource = this.dBDataSet;
+            // 
+            // dBDataSet
+            // 
+            this.dBDataSet.DataSetName = "DBDataSet";
+            this.dBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // workersTableAdapter
             // 
             this.workersTableAdapter.ClearBeforeFill = true;
@@ -350,7 +350,6 @@ namespace SalaryEntity
             this.Controls.Add(this.tabControl1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Name = "Form1";
-            this.Text = "```````````````````````";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
@@ -361,10 +360,10 @@ namespace SalaryEntity
             this.tabPage3.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.workersBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dBDataSet)).EndInit();
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.workersBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dBDataSet)).EndInit();
             this.ResumeLayout(false);
 
         }
